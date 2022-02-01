@@ -1,0 +1,24 @@
+.main-container{
+    background-color: rgb(247, 247, 247);
+    border-radius: 5px;
+}
+.main-container .row{
+    border: 1px solid rgb(235, 163, 163);
+}
+.main-container .row > .col{
+    border: 1px solid #53bdfa;
+    margin: 4px;
+    border-radius: 5px;
+}
+
+.main-container .row > .border-style{
+    outline: 1px solid #53bdfa;
+    border: 0px;
+    margin: 0px;
+    border-radius: 5px;
+}
+
+.main-container .row.with-height {
+    height: 100px;
+    background-color: rgb(235, 243, 250);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Probando Bootstrap 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container main-container">
+        <h1>Bootstrap 5 Responsive Columns</h1>
+        <div class="row">
+          <div class="col"><h5>Window OuterWidth</h5></div>
+          <div class="col" id="window-outer-width"></div>
+        </div>
+        <table class="table mb-4">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col">
+                  xs<br>
+                  <span class="fw-normal">&lt;576px</span>
+                </th>
+                <th scope="col">
+                  sm<br>
+                  <span class="fw-normal">≥576px</span>
+                </th>
+                <th scope="col">
+                  md<br>
+                  <span class="fw-normal">≥768px</span>
+                </th>
+                <th scope="col">
+                  lg<br>
+                  <span class="fw-normal">≥992px</span>
+                </th>
+                <th scope="col">
+                  xl<br>
+                  <span class="fw-normal">≥1200px</span>
+                </th>
+                <th scope="col">
+                  xxl<br>
+                  <span class="fw-normal">≥1400px</span>
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th class="text-nowrap" scope="row">Container <code class="fw-normal">max-width</code></th>
+                <td>None (auto)</td>
+                <td>540px</td>
+                <td>720px</td>
+                <td>960px</td>
+                <td>1140px</td>
+                <td>1320px</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Class prefix</th>
+                <td><code>.col-</code></td>
+                <td><code>.col-sm-</code></td>
+                <td><code>.col-md-</code></td>
+                <td><code>.col-lg-</code></td>
+                <td><code>.col-xl-</code></td>
+                <td><code>.col-xxl-</code></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row"># of columns</th>
+                <td colspan="6">12</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Gutter width</th>
+                <td colspan="6">1.5rem (.75rem on left and right)</td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Custom gutters</th>
+                <td colspan="6"><a href="/docs/5.0/layout/gutters/">Yes</a></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Nestable</th>
+                <td colspan="6"><a href="#nesting">Yes</a></td>
+              </tr>
+              <tr>
+                <th class="text-nowrap" scope="row">Column ordering</th>
+                <td colspan="6"><a href="/docs/5.0/layout/columns/#reordering">Yes</a></td>
+              </tr>
+            </tbody>
+          </table>
+        <div class="row">
+            <h2 class="get-width">Columnas con stack (Responsive) </h2>
+        </div>
+
+        <div class="row ">
+            <div class="col-sm-8 border-style get-width">col-sm-8 </div>
+            <div class="col-sm-4 border-style get-width">col-sm-4 </div>
+        </div>
+        <div class="row">
+          <div class="col-sm border-style">col-sm</div>
+          <div class="col-sm border-style">col-sm</div>
+          <div class="col-sm border-style">col-sm</div>
+        </div>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6 col-md-6 border-style">col-md-6</div>
+          <div class="col-xs-6 col-sm-6 col-md-6 border-style">col-md-6</div>
+        </div>
+    </div>
+    <link href="./styles.css"  rel="stylesheet">
+    <script src="./script.js"></script>
+</body>
+</html>
